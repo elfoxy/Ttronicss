@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-buttons a {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .nav-buttons a:hover {
+            background-color: #555;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .product-category {
+            margin-top: 30px;
+        }
+        .product-category h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        .product-item {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: calc(30.2% - 20px); /* tres productos por fila */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .product-item h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-item p {
+            font-size: 14px;
+            color: #555;
+        }
+        .product-item .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .product-item {
+                width: calc(50% - 20px); /* Sigue en dos productos por fila en pantallas medianas */
+            }
+        }
+        @media (max-width: 480px) {
+            .product-item {
+                width: 100%; /* Un producto por fila en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Productos</h1>
+    </header>
+
+    <!-- Botones de navegación -->
+    <div class="nav-buttons">
+        <a href="#navajas">Ir a Navajas</a>
+        <a href="#llaveros">Ir a Llaveros</a>
+    </div>
+
+    <div class="container">
+        <!-- Categoría 1: Navajas -->
+        <section class="product-category" id="navajas">
+            <h2>Categoría: Navajas</h2>
+            <div class="product-list">
+                <!-- Producto 1 -->
+                <div class="product-item">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Scc67a26c34484823a8430662546142e0r/Cuchillo-de-mariposa-plegable-port-til-de-acero-inoxidable-herramienta-de-entrenamiento-para-juegos-al-aire.jpg_.webp" alt="Navaja Mariposa Basica">
+                    <h3>Navaja Mariposa Básica</h3>
+                    <p>Navaja Mariposa en diversos colores (Gris, Negro, Multicolor, etc).</p>
+                    <p class="price"><del style="color: red;">12€</del> 10€</p>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product-item">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S61592727f0eb45cfa2e03402baa3b6d1T.jpg_640x640.jpg_.webp" alt="Navaja Octane">
+                    <h3>Navaja Octane</h3>
+                    <p>Una navaja inspirada en el personaje de Overwatch "Octane".</p>
+                    <p class="price"><del style="color: red;">25€</del> 20€</p>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product-item">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sd49e85d09b394ac69dad85d597dbf05eb.png_640x640.png_.webp" alt="Navaja Mariposa">
+                    <h3>Navaja Mariposa</h3>
+                    <p>Navaja curva color blanco y negro.</p>
+                    <p class="price"><del style="color: red;">20€</del> 16€</p>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product-item">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S690d88ac4a7c42bc83fb40dd1c429d99H.jpg_640x640.jpg_.webp" alt="Navaja Ninja">
+                    <h3>Navaja Ninja</h3>
+                    <p>Diseño inspirado en técnicas de artes marciales.</p>
+                    <p class="price"><del style="color: red;">20€</del> 15€</p>
+                </div>
+                <!-- Producto 5 -->
+                <div class="product-item">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sdcf8644caa824e44af3e515359df1eb7T.jpg_640x640.jpg_.webp" alt="Navaja Mariposa Dorada">
+                    <h3>Navaja Mariposa Dorada</h3>
+                    <p>Una navaja elegante con acabados dorados.</p>
+                    <p class="price"><del style="color: red;">30€</del> 25€</p>
+                </div>
+                <!-- Producto 6 -->
+                <div class="product-item">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sdaae9f9e184d482881208eeaca9e68cfU.png_640x640.png_.webp" alt="Navaja Shadow">
+                    <h3>Navaja Shadow</h3>
+                    <p>Perfecta para uso en exteriores y aventuras nocturnas.</p>
+                    <p class="price">20€</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categoría 2: Llaveros -->
+        <section class="product-category" id="llaveros">
+            <h2>Categoría: Llaveros</h2>
+            <div class="product-list">
+                <!-- Producto 1 -->
+                <div class="product-item">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S02092d4770894b869c104da22be7cb8d6/LLavero-de-fibra-de-carbono-para-coche-accesorio-de-aleaci-n-de-Zinc-para-BMW-Serie.jpg_.webp" width="300" height="200" alt="Llaverlo BMW full carbon">
+                    <h3>Llavero BMW Full Carbon</h3>
+                    <p>Llavero BMW full fibra de carbono (Plateado, Oro y Negro).</p>
+                    <p class="price"><del style="color: red;">10€</del> 8€</p>
+                </div>
+                <!--Producto 2-->
+                <div class="product-item">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S70f8e1e8930645e2bb4adf07b651034ax/LLavero-de-cambio-de-marchas-para-coche-colgante-de-Metal-para-cambio-de-marchas-1-piezas.jpg_.webp" width="300" height="200" alt="Llavero de LLavero-de-cambio-de-marchas-para-coche-colgante-de-Metal-para-cambio-de-marchas-1-piezas">
+                    <h3>Llavero de marchas</h3>
+                    <p>Llavero de marchas (Negro, Blanco, Rojo, Azul y Amarillo)</p>
+                    <p class="price"><del style="color: red;">8€</del> 5€</p>
+                </div>
+                <!--Producto 3-->
+                <div class="product-item">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S21ea5ceabff34973820bc4746ffc4ed9N/LLavero-de-cubo-Turbo-para-coche-llanta-de-rueda-llavero-de-aleaci-n-de-Zinc-de.jpg_.webp" width="300" height="200" alt="Llavero de llanta de rueda">
+                    <h3>Llavero de llanta de rueda</h3>
+                    <p>Llavero de llanta de rueda (Negro, Plata, Oro y Gasolina)</p>
+                    <p class="price"><del style="color: red;">8€</del> 5€</p>
+                </div>
+                <!--Producto 4-->
+                <div class="product-item">
+                    <img src="https://ae01.alicdn.com/kf/S3114b0e35ae24ba39b7531e55531cddbS/LLavero-de-tendencia-de-moda-Simple-llavero-de-m-quina-tragamonedas-de-juguete-de-fruta-colgante.jpg_.webp" width="300" height="200" alt="Llavero de máquina slot">
+                    <h3>Llavero de máquina slot</h3>
+                    <p>Llavero de máquina slot perfecta para jugar y ganar el 777 (Negro, Rojo, Rosa, Plata y Oro)</p>
+                    <p class="price"><del style="color: red;">8€</del> 5€</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S54dee35d4a834bed80ba3f185a5417938/Llavero-luminoso-giratorio-para-adultos-y-ni-os-juguetes-para-aliviar-el-estr-s-y-la.jpg_.webp" width="300" height="200" alt="Llavero luminoso giratorio">
+                    <h3>Llavero luminoso giratorio</h3>
+                    <p>Llavero luminoso giratorio para llevar tus llaves con estilo (Negro, Verde, Rojo, Azul, Amarillo, Rosa y Blanco)</p>
+                    <p class="price"><del style="color: red;">8€</del> 5€</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sad8f6972abb34e9ca6d6f0c5a638197eG/Mini-llavero-de-m-quina-de-juego-cl-sica-de-bolsillo-para-ni-os-consola-de.jpg_.webp" width="300" height="200" alt="Llavero de máquina de juegos con 26 juegos diferentes">
+                    <h3>Llavero máquina de juegos</h3>
+                    <p>Llavero de máquina de juegos con 26 juegos diferentes (Negro, Azul, Verde, Amarillo, Rojo y Blanco)</p>
+                    <p class="price"><del style="color: red;">10€</del> 8€</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
